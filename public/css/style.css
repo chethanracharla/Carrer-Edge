@@ -1,0 +1,80 @@
+body{
+    background:#f5f7fa;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.registration-card{
+    min-height:500px;
+}
+
+.form-label{
+    font-weight:bold;
+}
+
+.form-control{
+    height:50px;
+}
+
+.btn{
+    height:50px;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+.achievements-section {
+    font-family: "Poppins", sans-serif;
+}
+
+.achievements-section {
+    background-color: #0d6efd;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 70px 20px;
+}
+
+.achievements-section h2 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: white;
+}
+
+.achievements-section p {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.achievements-section h3 {
+    font-size: 52px;
+    font-weight: 600;
+    color: white;
+}
+
+.achievements-section .stat-label {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+.student-image {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
