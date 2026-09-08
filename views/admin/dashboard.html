@@ -1,0 +1,273 @@
+`
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="/admin/dashboard">
+                Placement Admin
+            </a>
+
+            <a href="/admin/logout"
+               class="btn btn-danger">
+
+                Logout
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <div class="container mt-5">
+
+        <h1 class="fw-bold">
+            Admin Dashboard
+        </h1>
+
+        <p class="text-muted">
+            Manage jobs and student applications.
+        </p>
+
+
+        <div class="row g-4">
+
+    <!-- ADD JOB -->
+
+    <div class="row g-4">
+
+    <!-- Add Job Card -->
+    <div class="col-md-4">
+        <div class="card h-100 p-4 shadow">
+            
+            <div class="fs-1 mb-2">💼</div>
+
+            <h2>Add Job</h2>
+
+            <p>Create a new job opportunity.</p>
+
+            <a href="/admin/jobs/add" 
+               class="btn btn-primary mt-auto d-flex justify-content-center align-items-center">
+                Add Job
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- View Jobs Card -->
+    <div class="col-md-4">
+        <div class="card h-100 p-4 shadow">
+
+            <div class="fs-1 mb-2">🏢</div>
+
+            <h2>View Jobs</h2>
+
+            <p>View all available jobs.</p>
+
+            <a href="/admin/jobs"
+               class="btn btn-success mt-auto d-flex justify-content-center align-items-center">
+                View Jobs
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- Applications Card -->
+    <div class="col-md-4">
+        <div class="card h-100 p-4 shadow">
+
+            <div class="fs-1 mb-2">📄</div>
+
+            <h2>Applications</h2>
+
+            <p>View student applications.</p>
+
+            <a href="/admin/applications"
+               class="btn btn-warning mt-auto d-flex justify-content-center align-items-center">
+                View Applications
+            </a>
+
+        </div>
+    </div>
+    <!-- ================= PLACEMENT STATISTICS ================= -->
+
+<hr class="my-5">
+
+<div class="container mb-5">
+
+    <h2 class="text-center fw-bold mb-4">
+
+        📊 Placement Statistics
+
+    </h2>
+
+    <div class="row g-4">
+
+        <!-- Total Students -->
+        <div class="col-md-4">
+
+            <div class="card shadow text-center h-100">
+
+                <div class="card-body">
+
+                    <h5>Total Students</h5>
+
+                    <h2 id="totalStudents">
+
+                        ${statistics.totalStudents}
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Total Jobs -->
+        <div class="col-md-4">
+
+            <div class="card shadow text-center h-100">
+
+                <div class="card-body">
+
+                    <h5>Total Jobs</h5>
+
+                    <h2 id="totalJobs">
+
+                        ${statistics.totalJobs}
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Total Applications -->
+        <div class="col-md-4">
+
+            <div class="card shadow text-center h-100">
+
+                <div class="card-body">
+
+                    <h5>Total Applications</h5>
+
+                    <h2 id="totalApplications">
+
+                        ${statistics.totalApplications}
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Approved -->
+        <div class="col-md-4">
+
+            <div class="card shadow text-center border-success h-100">
+
+                <div class="card-body">
+
+                    <h5>Approved</h5>
+
+                    <h2 id="approved">
+
+                        ${statistics.approved}
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Rejected -->
+        <div class="col-md-4">
+
+            <div class="card shadow text-center border-danger h-100">
+
+                <div class="card-body">
+
+                    <h5>Rejected</h5>
+
+                    <h2 id="rejected">
+
+                        ${statistics.rejected}
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Pending -->
+        <div class="col-md-4">
+
+            <div class="card shadow text-center border-warning h-100">
+
+                <div class="card-body">
+
+                    <h5>Pending</h5>
+
+                    <h2 id="pending">
+
+                        ${statistics.pending}
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+        `

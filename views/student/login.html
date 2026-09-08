@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container my-5">
+
+        <div class="row registration-card shadow-lg rounded overflow-hidden">
+
+            <!-- Left Panel -->
+            <div class="col-lg-5 bg-success text-white p-5 d-flex align-items-center">
+
+                <div class="text-center w-100">
+
+                    <h1 class="display-1">🎓</h1>
+
+                    <h2 class="fw-bold mt-4">
+                        Welcome Back!
+                    </h2>
+
+                    <p class="mt-4">
+                        Login to access your placement dashboard and continue your placement journey.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Right Panel -->
+            <div class="col-lg-7 bg-white p-5">
+
+                <h2 class="fw-bold mb-4">
+                    Student Login
+                </h2>
+
+                <form action="/student/login" method="POST">
+
+                    <!-- Email -->
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+                    <!-- Password -->
+                    <div class="mb-4">
+
+                        <label class="form-label">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            name="password"
+                            class="form-control"
+                            placeholder="Enter your password"
+                            required>
+
+                    </div>
+
+                    <!-- Login Button -->
+                    <div class="d-grid">
+
+                        <button
+                            type="submit"
+                            class="btn btn-success btn-lg">
+
+                            Login
+
+                        </button>
+
+                    </div>
+
+                    <!-- Register Link -->
+                    <div class="text-center mt-4">
+
+                        <p>
+                            Don't have an account?
+                            <a href="/student/register">
+                                Register Here
+                            </a>
+                        </p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
